@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   tools:showIn="navigation_view">
+    <!-- <item
+         android:id="@+id/my_profile"
+         android:title="My Profile"
+         />-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/search_friends"
+            android:title="Search Friends"
+
+
+            />
+        <item
+            android:id="@+id/friends_request"
+            android:title="Friend Requests"
+
+            />
+        <!--<item
+            android:id="@+id/create_group"
+            android:title="Create Group"
+            android:icon="@drawable/ic_create_group"
+            />-->
+        <item
+            android:id="@+id/allApp"
+            android:title="Applications"
+
+            />
+        <item
+            android:id="@+id/web_browse"
+            android:title="Browse"
+
+            />
+        <item
+            android:id="@+id/contacts"
+            android:title="Contacts"
+
+            />
+    </group>
+<item android:title="Settings">
+    <menu>
+    <item
+        android:id="@+id/settings"
+        android:title="Profile"
+
+        />
+   <!-- <item
+        android:id="@+id/uploadPost"
+        android:title="Upload Post"
+        android:icon="@drawable/ic_profile_person"
+         />-->
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+
+
+        />
+    </menu>
+</item>
+
+</menu>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedeemFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout101"
+            android:layout_width="58dp"
+            android:layout_height="501dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/penSear"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Pens"
+                app:layout_constraintBottom_toTopOf="@+id/findcourse"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/findcourse"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Bags"
+                app:layout_constraintBottom_toTopOf="@+id/artSear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/bookSear"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:rotation="270"
+                android:background="@drawable/roundbtn"
+                android:text="Books"
+                app:layout_constraintBottom_toTopOf="@+id/penSear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/All"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="All"
+                app:layout_constraintBottom_toTopOf="@+id/bookSear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/artSear"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="96dp"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Art"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/usernamesearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Hello , Sam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lets Find Something Good !!"
+            app:layout_constraintStart_toStartOf="@+id/usernamesearch"
+            app:layout_constraintTop_toBottomOf="@+id/usernamesearch" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userprofilepic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile1011" />
+
+        <EditText
+            android:id="@+id/search_prod"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/search_bg2"
+            android:drawableEnd="@drawable/ic_search"
+            android:ems="10"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:hint="What are you looking for?"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout101"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/prodc_recycler"
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout101"
+            app:layout_constraintTop_toBottomOf="@+id/search_prod" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

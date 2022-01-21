@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enrolled_course_card"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+        <RelativeLayout
+            android:id="@+id/trel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/enrolled_course_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+               >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/enrolled_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Front-End Development"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/enrolled_course_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrolled_course_name"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:scrollHorizontally="false"
+                android:text="Basics of HTML5 and CSS.Learn to integrate  a basic web page"
+                android:textAlignment="center"
+                android:textColor="#f7fbff"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/enrolled_start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrolled_course_description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/roundbtn"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Start"
+                android:textColor="#000"
+                app:backgroundTint="@null" />
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

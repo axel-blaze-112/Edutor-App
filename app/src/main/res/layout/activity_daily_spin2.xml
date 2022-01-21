@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".dailySpinActivity">
+
+    <TextView
+        android:id="@+id/coinsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        app:drawableEndCompat="@drawable/ic_coins">
+
+    </TextView>
+
+    <com.example.miniproj2.Spin.WheelView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/wheel_VIew"
+        app:BackgroundColor="#ff9800"
+        app:TextColor="#263238"
+        app:CenterImage="@drawable/wheel2"
+        app:CursorImage="@drawable/ic_cursor"
+        >
+
+    </com.example.miniproj2.Spin.WheelView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playBtn"
+        android:text="Sping the Wheel"
+        android:minWidth="180dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#fff"
+
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        >
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CheckInbtn"
+        android:text="Sping the Wheel"
+        android:minWidth="180dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#fff"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+       android:layout_marginStart="10dp"
+        android:layout_marginBottom="30dp"
+
+        >
+    </Button>
+</RelativeLayout>
